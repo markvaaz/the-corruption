@@ -1,6 +1,3 @@
-let personagem;
-let config;
-
 function abrirModal(){
   let janela = create("div", {className:"popup"});
   let span = create("span", {innerHTML:"Digite um telefone"});
@@ -30,26 +27,6 @@ function abrirModal(){
   document.body.appendChild(janela);
   input.focus()
 }
-
-function loadPersonagens(){
-  var ajax = new XMLHttpRequest();
-  ajax.open("GET", "/src/data/personagens.json", false);
-  ajax.send();
-  personagem = JSON.parse(ajax.responseText);
-  localStorage.setItem("personagens", this.personagem);
-  console.log(personagem);
-}
-loadPersonagens();
-
-function loadConfig(){
-  var ajax = new XMLHttpRequest();
-  ajax.open("GET", "/src/data/config.json", false);
-  ajax.send();
-  config = JSON.parse(ajax.responseText);
-  localStorage.setItem("config", this.config);
-  console.log(config);
-}
-loadConfig();
 
 function novoContato(personagemId){
   if(personagem[personagemId] !== undefined){

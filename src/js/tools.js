@@ -1,3 +1,5 @@
+let config;
+let personagem;
 function create(elementName, attributes){
   let element = document.createElement(elementName);
   if(attributes !== undefined){
@@ -31,3 +33,25 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
     }
   }
 }
+let url = new URL(window.location);
+if(url.searchParams.get("personagemId")){
+  var personagemId = url.searchParams.get("personagemId");
+}
+
+function loadPersonagens(){
+  var ajax = new XMLHttpRequest();
+  ajax.open("GET", "/src/data/personagens.json", false);
+  ajax.send();
+  personagem = JSON.parse(ajax.responseText);
+  localStorage.setItem("personagens", this.personagem);
+}
+loadPersonagens();
+
+function loadConfig(){
+  var ajax = new XMLHttpRequest();
+  ajax.open("GET", "/src/data/config.json", false);
+  ajax.send();
+  config = JSON.parse(ajax.responseText);
+  localStorage.setItem("config", this.config);
+}
+loadConfig();
