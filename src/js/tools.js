@@ -1,14 +1,14 @@
 let config;
 let personagem;
 function create(el, atributos){
-  let elemento = document.createElement(el)
+  let elemento = document.createElement(el);
   
-  for(let i in atributos){
-    if(elemento[i] !== null && elemento[i] !== undefined){
-      elemento[i] = atributos[i]
+  for(let atributo in atributos){
+    if(elemento[atributo] !== null && elemento[atributo] !== undefined){
+      elemento[atributo] = atributos[atributo];
     }
   }
-  return elemento
+  return elemento;
 }
 Element.prototype.remove = function() {
   this.parentElement.removeChild(this);
