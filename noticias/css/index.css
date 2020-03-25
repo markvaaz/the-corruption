@@ -4,6 +4,10 @@
   --main: rgb(206, 79, 79);
 }
 
+body{
+  background: #f9f9f9;
+}
+
 .app-top-bar{
   background: var(--main);
   color: #fff;
@@ -20,6 +24,7 @@
   padding: 10px;
   border: 1px solid rgba(0,0,0,0.1);
   box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 8px;
+  background: #fff;
 }
 
 .news-container .title{
