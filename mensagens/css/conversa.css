@@ -1,21 +1,9 @@
 @import url("/src/css/default.css");
-
-.app-top-bar{
-  background:lightseagreen;
-  border-bottom:1px solid rgba(255,255,255,.4);
-  color:#fff;
-  box-shadow: rgba(0,0,0,0.3) 0 3px 5px;
-}
+@import url("/mensagens/css/default.css");
 .app-logo{
   justify-content: right;
   align-items: center;
   align-content: center;
-}
-.app-name{
-  font-size:15px;
-}
-.app-buttons{
-  font-size: 28px;
 }
 .app-logo .profile-picture{
   font-size:30px;

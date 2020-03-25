@@ -1,0 +1,15 @@
+@import url("/src/css/default.css");
+
+.app-top-bar{
+  background: rgb(206, 79, 79);
+  color: #fff;
+}
+.app-logo{
+  font-size: 30px;
+}
+
+.news-container{
+  margin: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 8px;
+}

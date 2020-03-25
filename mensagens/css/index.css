@@ -1,19 +1,12 @@
 @import url("/src/css/default.css");
+@import url("/mensagens/css/default.css");
 .vermelho{
   height:50px;
   background:red;
 }
-.app-top-bar{
-  background:lightseagreen;
-  color:#fff;
-  box-shadow: rgba(0,0,0,0.3) 0 3px 5px;
-}
 .app-logo{
   font-size:32px;
   color:#fff;
-}
-.app-buttons{
-  font-size:26px;
 }
 .close-button{
   fill:#222;
