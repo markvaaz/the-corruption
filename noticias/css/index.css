@@ -5,7 +5,7 @@
 }
 
 body{
-  background: #f9f9f9;
+  background: #f8f8f8;
 }
 
 .app-top-bar{
@@ -15,6 +15,10 @@ body{
 
 .app-logo{
   font-size: 30px;
+}
+
+.container{
+  overflow:auto;
 }
 
 .news-container{
@@ -37,6 +41,14 @@ body{
   font-size: 14px;
 }
 
+.news-container .content img{
+  width:100%;
+}
+
+.news-container .content .content-img{
+  font-size:12px;
+}
+
 .news-container .read-more{
   display: inline-block;
   color: #fff;
@@ -44,4 +56,7 @@ body{
   padding: 8px;
   background: var(--main);
 }
-/* teste */
+
+.news-container .read-more:hover{
+  opacity:0.9;
+}

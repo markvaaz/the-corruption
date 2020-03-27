@@ -24,9 +24,15 @@ function loadPosts(){
 
     create("div", {className:"post", appendChild:[
       create("div", {className:"profile-info", appendChild:[
-        create("div", {className:"profile-picture", style:`background-image:url("${personagem[post.id].foto}");`}),
-        create("div", {className:"post-info", appendChild:[create("div", {className:"profile-name", innerHTML:personagem[post.id].nome}),
-        create("div", {className:"post-date", innerHTML:`${dia}/${mes}/${ano}`})]})
+        create("a", {href:`/switter/perfil.html?personagemId=${post.id}`, appendChild:[
+          create("div", {className:"profile-picture", style:`background-image:url("${personagem[post.id].foto}");`}),
+        ]}),
+        create("div", {className:"post-info", appendChild:[
+          create("a", {href:`/switter/perfil.html?personagemId=${post.id}`, appendChild:[
+            create("div", {className:"profile-name", innerHTML:personagem[post.id].nome})
+          ]}),
+          create("div", {className:"post-date", innerHTML:`${dia}/${mes}/${ano}`})
+        ]})
       ]}),
       create("div", {className:"post-content", innerHTML:post.conteudo})
     ]}, document.getElementsByClassName("feed")[0]);
