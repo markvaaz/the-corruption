@@ -8,13 +8,17 @@ body{
 .app-logo{
   font-size: 32px;
   color: #fff;
-  justify-content: right;
+  justify-content: center;
 }
 
 .app-logo div{
   display: grid;
   align-content: center;
   align-items: center;
+}
+
+.app-name{
+  padding-left: 0px;
 }
 
 .profile-list .profile{

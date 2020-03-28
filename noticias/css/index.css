@@ -49,6 +49,15 @@ body{
   font-size:12px;
 }
 
+.news-container p{
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .news-container .read-more{
   display: inline-block;
   color: #fff;
@@ -59,4 +68,26 @@ body{
 
 .news-container .read-more:hover{
   opacity:0.9;
+}
+
+.news-container.full{
+  display: block;
+  margin: 0;
+  height: 100%;
+}
+
+.news-container.full p{
+  -webkit-line-clamp: none;
+  -webkit-box-orient: initial;
+  text-overflow: initial;
+  overflow: initial;
+}
+
+.news-container.full .title{
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.full .read-more{
+  display: none;
 }
