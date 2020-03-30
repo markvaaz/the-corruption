@@ -17,10 +17,6 @@ body{
   align-items: center;
 }
 
-.app-name{
-  padding-left: 0px;
-}
-
 .profile-list .profile{
   display: grid;
   grid-template-columns: 60px auto;

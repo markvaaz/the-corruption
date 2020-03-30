@@ -1,0 +1,12 @@
+[
+  {
+    "titulo":"Assalto a joalheria acaba em casamento",
+    "imagem":"/src/imagens/pedido.jpg",
+    "conteudo":"Assalto acaba em casamento na cidadae de Jacubajara, segundo imagens da camera de segurança, o assaltante pediu sua parceira em casamento durante o assalto."
+  },
+  {
+    "titulo":"COVID-19 faz valor do diamante subir em 15%",
+    "imagem":"/src/imagens/diamantes.jpg",
+    "conteudo":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit sapien non scelerisque viverra. Etiam a dictum tortor. Quisque eget consequat mi, ac consectetur elit. Nulla id tristique justo. Fusce rhoncus, urna eget pretium lobortis, turpis tortor hendrerit sem, bibendum dignissim diam sem eu dolor. Maecenas tempor nunc ac nibh dictum, id hendrerit risus pellentesque.<br><br> Suspendisse at gravida libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non viverra orci. Maecenas bibendum eros ac orci euismod aliquet. Etiam sapien elit, vehicula non posuere ac, congue et leo. In convallis vulputate diam, a tristique leo dignissim eu."
+  }
+]
