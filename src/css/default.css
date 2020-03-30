@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+body,html,head{
+  padding:0;
+  margin:0;
+  font-family:sans-serif;
+  user-select:none;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.chevron-left{
+  position: relative;
+}
+.chevron-left:before{
+  content:url(/src/icons/chevron-left.svg);
+  font-weight: bold;
+  font-family:monospace;
+  color:rgba(255,255,255,.6);
+  font-size:20px;
+  position: absolute;
+  top:3px;
+  left:-20px;
+}
+.app-top-bar{
+  box-sizing:border-box;
+  position:absolute;
+  top:0;
+  height:55px;
+  width:100%;
+  display:grid;
+  grid-template-columns:55px auto auto;
+  font-family:sans-serif;
+  overflow:hidden;
+}
+.app-logo{
+  display:grid;
+  justify-content:center;
+  justify-items: center;
+  align-items:center;
+}
+.app-name{
+  line-height:55px;
+  font-size:18px;
+  padding:0 10px;
+}
+.app-buttons{
+  display: grid;
+  justify-content: right;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, 56px);
+  grid-gap: 1px;
+}
+.app-buttons > div{
+  padding: 14px;
+}
+.placeholder{
+  color:#999;
+  padding:  30px;
+  font-family: Inconsolata, sans-serif;
+  text-align:center;
+}
+.container{
+  position:absolute;
+  top:55px;
+  left:0;
+  width:100%;
+  height:calc(100% - 55px);
+}
+.hidden{
+  display:none !important;
+}

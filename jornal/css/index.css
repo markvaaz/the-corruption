@@ -1,0 +1,89 @@
+@import url("/src/css/default.css");
+
+:root{
+  --main: rgb(206, 79, 79);
+}
+
+body{
+  background: #f8f8f8;
+}
+
+.app-top-bar{
+  background: var(--main);
+  color: #fff;
+}
+
+.app-logo{
+  font-size: 30px;
+}
+
+.container{
+  overflow:auto;
+}
+
+.news-container{
+  display: grid;
+  grid-gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 8px;
+  background: #fff;
+}
+
+.news-container .title{
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+.news-container .content{
+  font-size: 14px;
+}
+
+.news-container .content img{
+  width:100%;
+}
+
+.news-container .content .content-img{
+  font-size:12px;
+}
+
+.news-container p{
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.news-container .read-more{
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  background: var(--main);
+}
+
+.news-container .read-more:hover{
+  opacity:0.9;
+}
+
+.news-container.full{
+  display: block;
+  margin: 0;
+  height: 100%;
+}
+
+.news-container.full p{
+  -webkit-line-clamp: none;
+  -webkit-box-orient: initial;
+  text-overflow: initial;
+  overflow: initial;
+}
+
+.news-container.full .title{
+  font-size: 22px;
+  margin-bottom: 15px;
+}
